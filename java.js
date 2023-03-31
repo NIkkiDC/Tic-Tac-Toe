@@ -31,15 +31,35 @@ const winningOptions = [
   
       this.innerText = currentPlayer ? 'x' : 'o'; // im replacing whatever empty square with a valuse tht the current player has
       currentPlayer = !currentPlayer; // if the current player value is true X if current player value is false it'll log O
-      currentPlayerEl.innerHTML = currentPlayer ? "Player 1" : "Player 2" // if else statement, but shorter its switching between P1 & p2 based on the current player boolean
+      const winner = currentPlayerEl.innerHTML = currentPlayer ? "Player 1" : "Player 2" // if else statement, but shorter its switching between P1 & p2 based on the current player boolean
       
       options[i] = event.target.innerHTML
       // options.push(event.target.innerHTML)
       console.log(options)
-      for(let i = 0; i < winningOptions.length; i++){
-          const winningEl = winningOptions[i]
+    //   for(let i = 0; i < winningOptions.length; i++){
+    //       const winningEl = winningOptions[i]
+    //       console.logwinning
 
-      }
+     // }
+    
+        if(options[0] === "x" && options[1] === "x" && options[2] === "x"){
+            console.log("player one wins")
+        } else {
+            (options[3] === "x" && options[4] === "x" && options[5] === "x")
+        } else {
+            (options[6] === "x" && options[7] === "x" && options[8] === "x")
+        } else {
+            (options[0] === "x" && options[3] === "x" && options[6] === "x")
+        } else {
+            (options[1] === "x" && options[4] === "x" && options[7] === "x")
+        } else {
+            (options[2] === "x" && options[5] === "x" && options[8] === "x")
+        } else {
+            (options[2] === "x" && options[4] === "x" && options[6] === "x")
+        } else {
+            (options[0] === "x" && options[4] === "x" && options[8] === "x")
+        }
+     
   }));
 //   btnRefresh.addEventListener('click',refreshGame);
 //   statusTxt.textContent=`${player} Your Turn`;

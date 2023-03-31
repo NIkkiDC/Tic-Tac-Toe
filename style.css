@@ -71,7 +71,7 @@
 /* The CSS FOR THE TICTAC PAGE */
 
 
-.container-nine:not(.box) { /* the actual tictactoe box */
+.container-nine { /* the actual tictactoe box */
         display: grid;
         grid-template-columns: repeat(3, auto);  /* this is making the boxes go into rows 3 is how many colmns */
         /*  the repeat() represents a repeated fragment of the track list, so tht u dont have to repeat the samething 
@@ -81,6 +81,8 @@
         margin: auto; /* this is centering the grid */
         border: 10px solid var(--text-color);/* of the box */ 
         border-style: none;
+        font-size: 150px;
+        text-align: center;
 }
 
 .box {
@@ -90,3 +92,16 @@
 .btn-outline-secondary {
 
 }
+
+/* The CSS for the NO game page */
+
+#not {
+  background: #d9d8e7; /* fallback color */
+  background: linear-gradient( to bottom, #d9d8e7, #c892d4);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+
+}
+

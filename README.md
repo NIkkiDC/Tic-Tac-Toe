@@ -1,12 +1,17 @@
 # Tic-Tac-Toe
 As a user, I should be able to start a new tic tac toe game // DONE
-As a user, I should be able to click on a square to add X first and then O, and so on //DONE
-As a user, I should be shown a message after each turn for if I win, lose, tie or who's turn it is next // STILL WORKING
-As a user, I should not be able to click the same square twice // DONE
-As a user, I should be shown a message when I win, lose or tie // STILL WORKING 
-As a user, I should not be able to continue playing once I win, lose, or tie // STILL WORKING
-As a user, I should be able to play the game again without refreshing the page // I dont understand, what if u have impmented a refresh button so that the game can be refreshed, so you can replay.
 
+As a user, I should be able to click on a square to add X first and then O, and so on //DONE
+
+As a user, I should be shown a message after each turn for if I win, lose, tie or who's turn it is next // STILL WORKING
+
+As a user, I should not be able to click the same square twice // DONE
+
+As a user, I should be shown a message when I win, lose or tie // STILL WORKING 
+
+As a user, I should not be able to continue playing once I win, lose, or tie // STILL WORKING
+
+As a user, I should be able to play the game again without refreshing the page // I dont understand, what if u have impmented a refresh button so that the game can be refreshed, so you can replay.
 
 I will first complete the simple things first, then add in some Javascript. I will alternate back and forth for the first 45 min, so I dont stress myself out with the JS, since that is where I have issues
 
@@ -48,6 +53,8 @@ Listing of outside sources, and their links.
 
 1. https://cssgradient.io/
 I really love implementing this linear gradient in alot of projects I complete, sometimes it is tuff to utlize, to get it to render properly, but I keep trying different things.
+
+
 2. https://getbootstrap.com/docs/5.3/components/navs-tabs/
 used bootstrap to create the navbar, the current navarbar I dont really like, so im going back and forth on if I should keep it or omit it, and just stick with buttoons 
 the code utlizied from bootstrap will be pasted below.
@@ -65,8 +72,10 @@ the code utlizied from bootstrap will be pasted below.
     <a class="nav-link disabled">Disabled</a>
   </li>
 </ul>
-3. 
-#. How to toggle a boolean, so it can go back and forth between true(X) and false(O), I am using this so that the user cannot click the square they already selected. The link is below. 
+
+
+
+3. How to toggle a boolean, so it can go back and forth between true(X) and false(O), I am using this so that the user cannot click the square they already selected. The link is below. 
 https://stackoverflow.com/questions/11604409/how-to-toggle-a-boolean
 snippet of the code I created refrencing toggle (not to be confused w/ copy and paste)  currentPlayerEl.innerHTML = currentPlayer ? "Player 1" : "Player 2" 
-#. 
+4. 
