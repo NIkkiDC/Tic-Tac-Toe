@@ -45,8 +45,9 @@ const winningOptions = [
         if(options[0] === "x" && options[1] === "x" && options[2] === "x"){
             console.log("player one wins")
         } else {
+            console.log('player won')
             (options[3] === "x" && options[4] === "x" && options[5] === "x")
-        } else {
+         } else {
             (options[6] === "x" && options[7] === "x" && options[8] === "x")
         } else {
             (options[0] === "x" && options[3] === "x" && options[6] === "x")
