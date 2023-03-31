@@ -62,13 +62,44 @@
   }
   
   .block-color {
-    background-color: var(--secondary-color);
+    background-color: linear-gradient( to bottom, #d9d8e7, #c892d4);
+    background: linear-gradient( to bottom, #d9d8e7, #c892d4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100;
+    height: 100;
     text-align: center;
     font-size: 36px;
     padding: px 20px;
   }
 
+ /* The CSS FOR THE Index.html page */
+
+  #main h1 {
+    color:#c892d4;
+    font-family: var(--heading-font-family);
+  }
+
+  #main h2 {
+    color:#c892d4;
+  }
+
+  #main p {
+    color: aliceblue;
+    font-family: var(--heading-font-family);
+  }
+
+  .btn-outline-secondary {
+color:#c892d4;
+background-color: #c892d4;
+  }
+
 /* The CSS FOR THE TICTAC PAGE */
+
+.nav-pills {
+  background-color: #c892d4;
+  color: #00d4ff;
+}
 
 
 .container-nine { /* the actual tictactoe box */
@@ -89,9 +120,6 @@
     border: 10px solid var(--text-color); /* I dont want the exterior boxes, but do want interior boxes ?*/
 }
 
-.btn-outline-secondary {
-
-}
 
 /* The CSS for the NO game page */
 
@@ -102,6 +130,16 @@
   background-size: cover;
   width: 100%;
   height: 100%;
-
 }
+
+#not h1 {
+  color: white;
+  font-family: var(--heading-font-family);
+}
+
+#not h4 {
+  color:aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 

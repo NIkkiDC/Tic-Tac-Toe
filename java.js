@@ -1,8 +1,8 @@
 const boxes=document.querySelectorAll('.box'); // going into each box 
 const statusTxt=document.querySelector('#play-now'); // starting the GAME
 const refreshBtn =document.querySelector('#refresh'); // restarting the game
-const currentPlayerEl = document.querySelector('#cp-element')
-
+const currentPlayerEl = document.querySelector('#cp-element');
+const winnerEl = document.querySelector('#winner-element')
 
 let options=["","","","","","","","",""]; // each square in the box 
 let currentPlayer= true; // able to be altered 
@@ -31,37 +31,76 @@ const winningOptions = [
   
       this.innerText = currentPlayer ? 'x' : 'o'; // im replacing whatever empty square with a valuse tht the current player has
       currentPlayer = !currentPlayer; // if the current player value is true X if current player value is false it'll log O
-      const winner = currentPlayerEl.innerHTML = currentPlayer ? "Player 1" : "Player 2" // if else statement, but shorter its switching between P1 & p2 based on the current player boolean
+      currentPlayerEl.innerHTML = currentPlayer ? "Player 1" : "Player 2" // if else statement, but shorter its switching between P1 & p2 based on the current player boolean
       
       options[i] = event.target.innerHTML
       // options.push(event.target.innerHTML)
-      console.log(options)
+      //console.log(options)
+      winningOptions.forEach((item, index) => {
+        // player 1 wins
+        if (
+        options[item[0]] === "x" &&
+        options[item[1]] === "x" &&
+        options[item[2]] === "x"
+        ) {  
+            //alert('player 1 has won this round!');
+            winnerEl.innerHTML = "PLAYER 1 HAS WON!!!!!"
+            setTimeout(() => {
+                restart();
+                }, 2000); 
+        } else if ( // if player 2 
+        options[item[0]] === "o" &&
+        options[item[1]] === "o" &&
+        options[item[2]] === "o"
+        ){
+                //alert('player 2 has won this round!')
+                winnerEl.innerHTML = "PLAYER 2 HAS WON!!!!!"
+                setTimeout(() => {
+                    restart();
+                    }, 1000); 
+        }
+
+
+
+      })
     //   for(let i = 0; i < winningOptions.length; i++){
     //       const winningEl = winningOptions[i]
     //       console.logwinning
 
      // }
+  
     
-        if(options[0] === "x" && options[1] === "x" && options[2] === "x"){
-            console.log("player one wins")
-        } else {
-            console.log('player won')
-            (options[3] === "x" && options[4] === "x" && options[5] === "x")
-         } else {
-            (options[6] === "x" && options[7] === "x" && options[8] === "x")
-        } else {
-            (options[0] === "x" && options[3] === "x" && options[6] === "x")
-        } else {
-            (options[1] === "x" && options[4] === "x" && options[7] === "x")
-        } else {
-            (options[2] === "x" && options[5] === "x" && options[8] === "x")
-        } else {
-            (options[2] === "x" && options[4] === "x" && options[6] === "x")
-        } else {
-            (options[0] === "x" && options[4] === "x" && options[8] === "x")
-        }
+//         if(options[0] === "x" && options[1] === "x" && options[2] === "x"){
+//             console.log("player one wins")
+//         } else {
+//             console.log('player won')
+//             (options[3] === "x" && options[4] === "x" && options[5] === "x")
+//          } else {
+//             (options[6] === "x" && options[7] === "x" && options[8] === "x")
+//         } else {
+//             (options[0] === "x" && options[3] === "x" && options[6] === "x")
+//         } else {
+//             (options[1] === "x" && options[4] === "x" && options[7] === "x")
+//         } else {
+//             (options[2] === "x" && options[5] === "x" && options[8] === "x")
+//         } else {
+//             (options[2] === "x" && options[4] === "x" && options[6] === "x")
+//         } else {
+//             (options[0] === "x" && options[4] === "x" && options[8] === "x")
+//         }
      
-  }));
+   }));
+
+function restart(){ // this is to restrart the game
+    for(let i=0; i<options.length; i++){
+        options[i] = ""
+    }
+    //boxes.forEach() // looping through the array 
+    boxes.forEach((box, index) => { // looping thru the array 
+        box.innerHTML = "" // emptying all the boxes at the end once youve won
+    }) 
+}
+
 //   btnRefresh.addEventListener('click',refreshGame);
 //   statusTxt.textContent=`${player} Your Turn`;
 //   running=true;
@@ -75,7 +114,7 @@ const winningOptions = [
 //     this.innerText = 'o'
 //     }
 //    currentPlayer = !currentPlayer // flipping the value ! 
-// }
+//}
 
 
 
@@ -89,4 +128,3 @@ const winningOptions = [
   refreshBtn.addEventListener('click', function(){
     window.location.reload() // reload the page
   } )
-
