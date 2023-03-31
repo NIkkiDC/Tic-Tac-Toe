@@ -1,0 +1,92 @@
+/*this is the CSS for the first page!*/
+
+:root {
+    --branding-color: #d9d8e7;
+    --secondary-color: #c892d4;
+    --text-color: #00d4ff;
+    --heading-font-family: "Playfair Display", serif;
+    --default-font-family: "poppins", sans-serif;
+  }
+  
+  body {
+    font-family: var(--default-font-family);
+    color: var(--text-color);
+  }
+  
+  
+  h1 {
+    font-size: 50px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--text-color);
+  }
+
+  h2 {
+    font-size: 40px;
+    padding-bottom: 1px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--text-color);
+  }
+
+  h3 {
+    font-size: 30px;
+    padding-bottom: 1px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--text-color);
+  }
+
+  h4 { /* this is the font being utlizing for the DONT page */ 
+    font-size: 10px;
+    padding-bottom: 1px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--text-color);
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+  
+  p {
+    margin:0;
+    padding:0;
+    font-family:var(--default-font-family);
+    color: var(--text-color);
+    font-size: 20px;
+  }
+  
+  #btn-div {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .block-color {
+    background-color: var(--secondary-color);
+    text-align: center;
+    font-size: 36px;
+    padding: px 20px;
+  }
+
+/* The CSS FOR THE TICTAC PAGE */
+
+
+.container-nine:not(.box) { /* the actual tictactoe box */
+        display: grid;
+        grid-template-columns: repeat(3, auto);  /* this is making the boxes go into rows 3 is how many colmns */
+        /*  the repeat() represents a repeated fragment of the track list, so tht u dont have to repeat the samething 
+        if its going to be the same-- way to make shorter code  */
+        width: 812px; /* the size of the grid */
+        height:812px; /* the size of the grid */
+        margin: auto; /* this is centering the grid */
+        border: 10px solid var(--text-color);/* of the box */ 
+        border-style: none;
+}
+
+.box {
+    border: 10px solid var(--text-color); /* I dont want the exterior boxes, but do want interior boxes ?*/
+}
+
+.btn-outline-secondary {
+
+}
