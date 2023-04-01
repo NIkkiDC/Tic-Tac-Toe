@@ -1,145 +1,221 @@
 /*this is the CSS for the first page!*/
 
 :root {
-    --branding-color: #d9d8e7;
-    --secondary-color: #c892d4;
-    --text-color: #00d4ff;
-    --heading-font-family: "Playfair Display", serif;
-    --default-font-family: "poppins", sans-serif;
-  }
-  
-  body {
-    font-family: var(--default-font-family);
-    color: var(--text-color);
-  }
-  
-  
-  h1 {
-    font-size: 50px;
-    line-height: 1.5;
-    text-align: center;
-    color: var(--text-color);
-  }
+  --branding-color: #d9d8e7;
+  --secondary-color: #c892d4;
+  --text-color: #00d4ff;
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "poppins", sans-serif;
+}
 
-  h2 {
-    font-size: 40px;
-    padding-bottom: 1px;
-    line-height: 1.5;
-    text-align: center;
-    color: var(--text-color);
-  }
+body {
+  font-family: var(--default-font-family);
+  color: var(--text-color);
+}
 
-  h3 {
-    font-size: 30px;
-    padding-bottom: 1px;
-    line-height: 1.5;
-    text-align: center;
-    color: var(--text-color);
-  }
+h1 {
+  font-size: 50px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--text-color);
+}
 
-  h4 { /* this is the font being utlizing for the DONT page */ 
-    font-size: 10px;
-    padding-bottom: 1px;
-    line-height: 1.5;
-    text-align: center;
-    color: var(--text-color);
-    margin: 0 auto;
-    padding: 0 auto;
-  }
-  
-  p {
-    margin:0;
-    padding:0;
-    font-family:var(--default-font-family);
-    color: var(--text-color);
-    font-size: 20px;
-  }
-  
-  #btn-div {
-    border: 1px solid red;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .block-color {
-    background-color: linear-gradient( to bottom, #d9d8e7, #c892d4);
-    background: linear-gradient( to bottom, #d9d8e7, #c892d4);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100;
-    height: 100;
-    text-align: center;
-    font-size: 36px;
-    padding: px 20px;
-  }
+h2 {
+  font-size: 40px;
+  padding-bottom: 1px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--text-color);
+}
 
- /* The CSS FOR THE Index.html page */
+h3 {
+  font-size: 30px;
+  padding-bottom: 1px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--text-color);
+}
 
-  #main h1 {
-    color:#c892d4;
-    font-family: var(--heading-font-family);
-  }
+h4 {
+  /* this is the font being utlizing for the DONT page */
+  font-size: 10px;
+  padding-bottom: 1px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--text-color);
+  margin: 0 auto;
+  padding: 0 auto;
+}
 
-  #main h2 {
-    color:#c892d4;
-  }
+p {
+  margin: 0;
+  padding: 0;
+  font-family: var(--default-font-family);
+  color: var(--text-color);
+  font-size: 20px;
+}
+.heading {
+  padding: 50px;
+}
 
-  #main p {
-    color: aliceblue;
-    font-family: var(--heading-font-family);
-  }
+#btn-div {
+  display: flex;
+  justify-content: center;
+  gap: 65px;
+}
 
-  .btn-outline-secondary {
-color:#c892d4;
-background-color: #c892d4;
-  }
+#btn-div a {
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 15px 20px;
+}
+#btn-div a:hover {
+  background-color: var(--text-color);
+}
+
+.block-color {
+  background-color: linear-gradient(to bottom, #d9d8e7, #c892d4);
+  background: linear-gradient(to bottom, #d9d8e7, #c892d4);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100;
+  height: 100;
+  text-align: center;
+  font-size: 36px;
+  padding: 40px;
+  margin-bottom: 50px;
+}
+
+/* The CSS FOR THE Index.html page */
+
+#main h1 {
+  color: #c892d4;
+  font-family: var(--heading-font-family);
+}
+
+#main h2 {
+  color: #c892d4;
+}
+
+#main p {
+  color: aliceblue;
+  font-family: var(--heading-font-family);
+}
+
+.btn-outline-secondary {
+  color: #c892d4;
+  background-color: #c892d4;
+}
 
 /* The CSS FOR THE TICTAC PAGE */
 
 .nav-pills {
   background-color: #c892d4;
-  color: #00d4ff;
+}
+.nav-link {
+  color: white !important;
+}
+.active {
+  background-color: #00d4ff !important;
 }
 
-
-.container-nine { /* the actual tictactoe box */
-        display: grid;
-        grid-template-columns: repeat(3, auto);  /* this is making the boxes go into rows 3 is how many colmns */
-        /*  the repeat() represents a repeated fragment of the track list, so tht u dont have to repeat the samething 
+.container-nine {
+  /* the actual tictactoe box */
+  display: grid;
+  grid-template-rows: repeat(3, 200px);
+  grid-template-columns: repeat(
+    3,
+    200px
+  ); /* this is making the boxes go into rows 3 is how many colmns */
+  /*  the repeat() represents a repeated fragment of the track list, so tht u dont have to repeat the samething 
         if its going to be the same-- way to make shorter code  */
-        width: 812px; /* the size of the grid */
-        height:812px; /* the size of the grid */
-        margin: auto; /* this is centering the grid */
-        border: 10px solid var(--text-color);/* of the box */ 
-        border-style: none;
-        font-size: 150px;
-        text-align: center;
+  width: 600px; /* the size of the grid */
+  height: 600px; /* the size of the grid */
+  margin: auto; /* this is centering the grid */
+  border: 10px solid var(--text-color); /* of the box */
+  border-style: none;
+  font-size: 150px;
+  text-align: center;
 }
 
 .box {
-    border: 10px solid var(--text-color); /* I dont want the exterior boxes, but do want interior boxes ?*/
+  border: 10px solid var(--secondary-color); /* I dont want the exterior boxes, but do want interior boxes ?*/
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
+#refresh {
+  background-color: #c892d4 !important;
+  color: white;
+}
 
 /* The CSS for the NO game page */
 
 #not {
   background: #d9d8e7; /* fallback color */
-  background: linear-gradient( to bottom, #d9d8e7, #c892d4);
+  background: linear-gradient(to bottom, #d9d8e7, #c892d4);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  padding: 0px 100px;
 }
 
 #not h1 {
   color: white;
   font-family: var(--heading-font-family);
+  margin-top: 50px;
 }
 
 #not h4 {
-  color:aliceblue;
+  color: aliceblue;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.generalContainer {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 50px;
+}
+.firstContainer {
+  flex: 0.5;
+}
+.firstContainer h4 {
+  border: 4px solid var(--text-color);
+  padding: 20px;
+  border-radius: 10px;
+}
 
+.secondContainer {
+  flex: 0.5;
+}
+.secondContainer h4 {
+  border: 4px solid var(--text-color);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#gameBody {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #d9d8e7, #c892d4);
+  padding: 0px 20px;
+}
+#gameBody h2 {
+  color: #c892d4;
+  margin: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardInfo {
+  background-color: #04caf2d4 !important;
+  width: 500px !important;
+  /* margin-left: 30%; */
+  margin: auto;
+  margin-top: 30px;
+  color: white;
+}
