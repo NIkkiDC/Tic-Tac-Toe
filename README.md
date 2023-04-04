@@ -88,5 +88,5 @@ currentPlayer = true;
 A win for me that I was super excited about was me being able to put a div in the body of each page, so I can alter different things, and target the CSS better. I have 3 pages with 3 different themes on each one.
 
 Project
-Planning- I knew I wanted to utlize a couuple of pages because I wanted the site to be more interactive with the user.
+Planning- I knew I wanted to utlize a couuple of pages because I wanted the site to be more interactive with the user. I drew it out on paper.
 Icebox - I wish I could have added a space where users can enter their own username. So it can be a bit more personal for users. Another thing i'd like to add is a way for users to personalize their X or O.
