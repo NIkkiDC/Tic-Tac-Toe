@@ -219,3 +219,55 @@ p {
   margin-top: 30px;
   color: white;
 }
+
+#records-element {
+  height: 70px;
+  overflow: scroll;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 44px;
+  }
+
+  h2 {
+    font-size: 44px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
+
+  .content {
+    text-align: center;
+    padding: 0;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  footer .content-box {
+    padding: 25px;
+  }
+  #not {
+    padding: 0px;
+  }
+
+  .generalContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+}

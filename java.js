@@ -33,7 +33,7 @@ boxes.forEach((box, i) =>
       return; // its returning the values from above
     }
 
-    this.innerText = currentPlayer ? "x" : "o"; // im replacing whatever empty square with a valuse tht the current player has
+    this.innerText = currentPlayer ? "x" : "o"; // im replacing whatever empty square with a value tht the current player has
     currentPlayer = !currentPlayer; // if the current player value is true X if current player value is false it'll log O
     currentPlayerEl.innerHTML = currentPlayer ? "Player 1" : "Player 2"; // if else statement, but shorter its switching between P1 & p2 based on the current player boolean
 
@@ -53,7 +53,7 @@ boxes.forEach((box, i) =>
         winnerEl.innerHTML = "PLAYER 1 HAS WON!!!!!";
         setTimeout(() => {
           restart();
-        }, 4000);
+        }, 3000);
         roundNumber++; // increasing the round number if player 1 wins
         recordsEl.innerHTML += `<div>Player One won</div>`;
       } else if (
@@ -67,7 +67,7 @@ boxes.forEach((box, i) =>
         winnerEl.innerHTML = "PLAYER 2 HAS WON!!!!!";
         setTimeout(() => {
           restart();
-        }, 4000);
+        }, 3000);
         roundNumber++; // increasing the round number if player 2 wins
         recordsEl.innerHTML += `<div>Player Two won</div>`;
       } else if (!options.includes("")) {
@@ -76,7 +76,7 @@ boxes.forEach((box, i) =>
         winnerEl.innerHTML = "ITS A CATS!!!!!";
         setTimeout(() => {
           restart();
-        }, 4000);
+        }, 3000);
 
         // alert('Its a tie')
       }
