@@ -25,6 +25,8 @@ The Home page - this tells u a little about the game, and history/ rules
 Depending on which button u select you will go to the second page will be a page that is telling u to just accept the rules of the game so u can play
 The other button is just a button so u can actually play the game.
 
+Description: The site has a total of three pages. The first page is the home page. The homepage displays the rules. After the user has viewed the rules they will then have to select a button. Confirming if they agree to the rules or not. If they do not accept the rules, they will then be taken to a seperate page, that will scold them. The page is a boring page that has information about the games history. It also tells the user that they are diffcult since they did not just accept the rules. The third, and final page is the actual game. On the page where the game is the user has access to a score tracker-- to inform them of who has won previous games, as well as informs them who currently won, and if it is a tie.
+
 Create a div container so tht u can create the tictac toe board.
 
 <div class="container-nine">
@@ -76,7 +78,9 @@ the code utlizied from bootstrap will be pasted below.
 3. How to toggle a boolean, so it can go back and forth between true(X) and false(O), I am using this so that the user cannot click the square they already selected. The link is below.
    https://stackoverflow.com/questions/11604409/how-to-toggle-a-boolean
    snippet of the code I created refrencing toggle (not to be confused w/ copy and paste) currentPlayerEl.innerHTML = currentPlayer ? "Player 1" : "Player 2"
-4.
+
+4.Photos from the game
+![](/Users/nikkic./Desktop/Screenshot 2023-04-04 at 10.33.52 AM.png)
 
 Project name: (TIC-TAC-TOE)
 Description: The site has a total of three pages. The first page is the home page. The homepage displays the rules. After the user has viewed the rules they will then have to select a button. Confirming if they agree to the rules or not. If they do not accept the rules, they will then be taken to a seperate page, that will scold them. The page is a boring page that has information about the games history. It also tells the user that they are diffcult since they did not just accept the rules. The third, and final page is the actual game. On the page where the game is the user has access to a score tracker-- to inform them of who has won previous games, as well as informs them who currently won, and if it is a tie.
@@ -90,3 +94,10 @@ A win for me that I was super excited about was me being able to put a div in th
 Project
 Planning- I knew I wanted to utlize a couuple of pages because I wanted the site to be more interactive with the user. I drew it out on paper.
 Icebox - I wish I could have added a space where users can enter their own username. So it can be a bit more personal for users. Another thing i'd like to add is a way for users to personalize their X or O.
+
+things to work on.
+add a space where users can update their username
+allow the user to pick their own icon to be displayed on the game
+add a button to the 'no I cant follow rules page' the button should lead back to the game page so the user can play
+removw the exterior box from the board
+Add a footer
